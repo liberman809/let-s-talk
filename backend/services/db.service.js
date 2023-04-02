@@ -12,7 +12,7 @@ var dbConn = null
 async function getCollection(collectionName) {
     try {
         const db = await connect()
-        const collection = await db.collection(collectionName)
+        const collection = await db.collection(letsTalke)
         return collection
     } catch (err) {
         logger.error('Failed to get Mongo collection', err)
