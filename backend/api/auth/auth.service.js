@@ -29,6 +29,7 @@ async function login(phoneNum, password) {
 async function signup({ phoneNum, nickname, groups, password }) {
     const saltRounds = 10
 
+    console.log('work')
     logger.debug(`auth.service - signup with phoneNum: ${phoneNum}`)
     if (!phoneNum  || !nickname || !groups || !password) return Promise.reject('Missing required signup information')
 

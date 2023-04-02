@@ -112,6 +112,8 @@ async function update(user) {
 
 async function add(user) {
     try {
+
+        console.log('bbbbbbbbbbbbbbbbbbbbbbb')
         // peek only updatable fields!
         const userToAdd = {
             phoneNum: user.phoneNum,
@@ -123,6 +125,7 @@ async function add(user) {
         await collection.insertOne(userToAdd)
         return userToAdd
     } catch (err) {
+        console.log('not add')
         logger.error('cannot add user', err)
         throw err
     }
