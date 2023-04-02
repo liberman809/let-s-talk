@@ -1,0 +1,339 @@
+/* Breakpoint mixins */
+/* Media  Mixins */
+@font-face {}
+@font-face {}
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+button {
+  border: 0;
+  background-color: #ce2e6c;
+  color: whitesmoke;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+form > * {
+  display: block;
+  width: 200px;
+  margin: 10px 0px;
+}
+
+.btn-link {
+  border: 0;
+  background-color: transparent;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.btn-link:hover {
+  background-color: #ce2e6c;
+  transform: scale(1.1);
+}
+
+.index {
+  position: absolute;
+  height: 88.6%;
+  width: 100%;
+}
+
+.body {
+  width: 100%;
+}
+
+.menu {
+  border-right: 1px solid;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.menu .userSetings {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.menu .mainUserSetings {
+  background-color: rgb(242, 242, 242);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.menu .mainUserSetings .setingsForm {
+  position: relative;
+  bottom: 100px;
+}
+.menu .groupsHeader {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(242, 242, 242);
+}
+.menu .groupsHeader .userActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0px 15px;
+}
+.menu .groupsHeader .userActions .button {
+  cursor: pointer;
+}
+.menu .groupsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.logInSignUp {
+  background-color: #aed6dc;
+  margin: auto;
+  width: 400px;
+  height: 300px;
+  position: relative;
+  bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logInSignUp .singBtn {
+  cursor: pointer;
+}
+
+.addGroup {
+  position: relative;
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.newGroup {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.chat {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.chat.narrow {
+  left: 25%;
+  width: 37.5%;
+}
+.chat .messages {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(235, 225, 214);
+  padding: 0px 20px;
+}
+.chat .messages .message {
+  align-items: end;
+  width: auto;
+  max-width: 300px;
+  margin-bottom: 15px;
+  background-color: white;
+  border-radius: 5px;
+  overflow-wrap: break-word;
+}
+.chat .messages .message .msgBody {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  word-break: break-all;
+}
+.chat .messages .message .msgBody .msg {
+  background-color: aqua;
+  max-width: 250px;
+}
+.chat .messages .message .msgBody .msgTime {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 20px;
+}
+.chat .messages .message.my {
+  align-items: end;
+  background-color: rgb(243, 129, 151);
+  max-width: 320px;
+  width: auto;
+  width: 200px;
+}
+.chat .messages .message.my.narrow {
+  left: 30%;
+}
+.chat .newMsg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(242, 242, 242);
+}
+.chat .newMsg .newMsgForm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(242, 242, 242);
+}
+.chat .newMsg .msg {
+  position: relative;
+  width: 90%;
+  height: 40px;
+  box-shadow: 1px 1px 1px 1px;
+}
+.chat .newMsg .newMsg {
+  position: relative;
+  background-color: rgb(242, 242, 242);
+  background-color: rgb(129, 60, 60);
+}
+
+.index {
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  min-height: 50px;
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.group:hover {
+  background-color: rgb(242, 242, 242);
+}
+
+.groupHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90px;
+  background-color: rgb(242, 242, 242);
+}
+.groupHeader.narrow {
+  width: 37.5%;
+}
+.groupHeader .group-title {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.setings {
+  position: absolute;
+  right: 0%;
+  width: 37.5%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(242, 242, 242);
+}
+.setings .setings-header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 1px solid;
+}
+.setings .setings-title {
+  font-size: 25px;
+}
+.setings .groupSetings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+.setings .groupSetings .groupSetingsBtn {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.setings .groupsActions {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.setings .groupsActions .leaveGroup {
+  cursor: pointer;
+}
+.setings .members {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+  background-color: white;
+}
+.setings .members .addMember {
+  display: flex;
+  justify-content: center;
+}
+.setings .members .membersList {
+  margin-top: 15px;
+}
+.setings .members .member {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+.setings .members .member.flex-center {
+  display: flex;
+  justify-content: center;
+}
+.setings .members .member .memberAction {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+.setings .members .member .memberAction .memberBtn {
+  cursor: pointer;
+}
+.setings .members .membersTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.admins {
+  display: flex;
+}/*# sourceMappingURL=main.css.map */

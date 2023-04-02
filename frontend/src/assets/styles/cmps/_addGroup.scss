@@ -1,0 +1,41 @@
+.addGroup{
+    position: relative;
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 884px) {
+
+    .addGroup{
+        width: 60%;
+
+    }
+}
+
+@media screen and (max-width: 770px) {
+
+    .addGroup{
+        width: 60%;
+
+    }
+}
+
+@media screen and (max-width: 664px) {
+
+    .addGroup{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 624px) {
+
+    .addGroup{
+        width: 100%;
+    }
+}
