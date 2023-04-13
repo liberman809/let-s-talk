@@ -77,28 +77,16 @@
     .homeContant {
         width: 400px !important;
         height: 200px !important;
-
         .mainContant{
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-
         .madeBy {
             display: none;
         }
     }
-
     .logInSignUp {
         margin-bottom: 50px;
     }
-
-    
 }
-
-// @media screen and (max-width: 624px) {
-
-//     .addGroup{
-//         width: 100%;
-//     }
-// }
