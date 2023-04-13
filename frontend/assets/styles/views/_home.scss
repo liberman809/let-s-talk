@@ -1,0 +1,104 @@
+.home {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0px 90px;
+    background-color: rgb(220, 133, 133);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: rgb(100, 161, 161);
+
+    .homeContant {
+        width: 550px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 10px;
+
+        .contant{
+            font-size: 35px;
+        }
+
+        .madeBy {
+            font-size: 20px;
+        }
+    }
+
+    .logInSignUp {
+        background-color: white;
+        width: 400px;
+        height: 300px;
+        // position: absolute;
+        // top: 20%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgb(209, 90, 90);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .input {
+            height: 40px;
+            width: 300px;
+        }
+
+        .a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .singBtn {
+            margin: auto;
+            cursor: pointer;
+            width: 150px;
+        }
+    }
+}
+
+@media screen and (max-width: 916px) {
+
+    .homeContant {
+        .contant{
+            font-size: 33px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 901px) {
+    .home {
+        flex-direction: column-reverse !important;
+        padding: 50px 90px !important;
+    }
+
+    .homeContant {
+        width: 400px !important;
+        height: 200px !important;
+
+        .mainContant{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .madeBy {
+            display: none;
+        }
+    }
+
+    .logInSignUp {
+        margin-bottom: 50px;
+    }
+
+    
+}
+
+// @media screen and (max-width: 624px) {
+
+//     .addGroup{
+//         width: 100%;
+//     }
+// }

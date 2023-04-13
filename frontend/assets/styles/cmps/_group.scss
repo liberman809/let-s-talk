@@ -1,0 +1,17 @@
+.group{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    min-height: 50px;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+.group:hover{
+    background-color: rgb(220, 133, 133);
+}
